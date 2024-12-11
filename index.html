@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Aldiansyah Putra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        /* Custom scrollbar styles */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #2d3748; /* Tailwind's gray-800 */
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #4a5568; /* Tailwind's gray-700 */
+            border-radius: 4px;
+        }
+        /* Navbar hover animation */
+        .nav-item a {
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem; /* Tailwind's rounded-md */
+        }
+        .nav-item a:hover {
+            color: #63b3ed; /* Tailwind's blue-400 */
+            background-color: #2d3748; /* Tailwind's gray-800 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div id="branding">
+                <h1 class="text-3xl font-bold"><span class="text-blue-400">Muhammad Aldiansyah Putra</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li class="nav-item current"><a href="#" class="hover:text-blue-400">Home</a></li>
+                    <li class="nav-item"><a href="#bio" class="hover:text-blue-400">Bio</a></li>
+                    <li class="nav-item"><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase" class="bg-cover bg-center text-white text-center py-20 relative" style="background-image: url('programmer.jpeg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto relative z-10">
+            <h1 class="text-5xl font-bold">Welcome to <span>Putra Portfolio</span></h1>
+            <p class="text-xl mt-4">Software and Game Development Enthusiast</p>
+        </div>
+    </section>
+
+    <section id="main" class="container mx-auto py-10">
+        <div id="bio" class="bio mb-10 border border-gray-700 p-8 rounded-lg shadow-lg bg-gray-800">
+            <h2 class="text-3xl font-bold mb-4 text-gray-300">Bio</h2>
+            <p class="mb-4 text-gray-400 text-2xl">Nama: Muhammad Aldiansyah Putra</p>
+            <p class="mb-4 text-gray-400 text-2xl">Keahlian: Pengembangan Perangkat Lunak dan Game</p>
+            <p class="mb-4 text-gray-400 text-2xl">Tempat dan Tanggal Lahir: Cianjur, 21 Februari 2008</p>
+            <p class="mb-4 text-gray-400 text-2xl">Pendidikan: Saat ini sedang menempuh pendidikan di SMKN 1 Cianjur</p>
+            <p class="mb-4 text-gray-400 text-2xl">Hai, perkenalkan nama saya Muhammad Aldiansyah Putra. atau biasa di panggil Aldi ataupun Putra. Saya adalah seorang software dan game developer, saya lahir di cianjur pada 21 februari 2008, saat ini saya sedang menempuh pendidikan di SMK Negeri 1 Cianjur. Saya juga sempat mengikuti beberapa program pendidikan seperti:</p>
+            <ul class="list-disc list-inside mb-4 text-gray-400 text-2xl">
+                <li>Bootcamp Game Development</li>
+                <li>3D Modelling</li>
+                <li>UI & UX Designing</li>
+                <li>Mobile Development</li>
+                <li>Web Development</li>
+            </ul>
+            <p class="mb-4 text-gray-400 text-2xl">Saya juga sempat mengikuti beberapa project real dari sekolah seperti project kas mini yang saat ini sedang saya kerjakan.</p>
+        </div>
+
+        <div id="skills" class="skills mb-10 border border-gray-700 p-8 rounded-lg shadow-lg bg-gray-800">
+            <h2 class="text-3xl font-bold mb-4 text-gray-300 text-center">Skills</h2>
+            <ul class="list-none text-2xl">
+                <li class="mb-4">
+                    <div class="flex justify-between">
+                        <span>Javascript - dasar</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 40%"></div>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <div class="flex justify-between">
+                        <span>Python - dasar</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 40%"></div>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <div class="flex justify-between">
+                        <span>PHP - menengah</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <div class="flex justify-between">
+                        <span>C# - menengah</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </li>
+                <li class="mb-4">
+                    <div class="flex justify-between">
+                        <span>Dart - menengah</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-2.5">
+                        <div class="bg-blue-500 h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="projects" class="projects mb-10 border border-gray-700 p-8 rounded-lg shadow-lg bg-gray-800">
+            <h2 class="text-3xl font-bold mb-4 text-gray-300 text-center">Projects</h2>
+            <div class="flex overflow-x-auto space-x-6 custom-scrollbar text-2xl">
+                <div class="border border-gray-700 p-4 rounded-lg shadow-lg bg-gray-700 flex-shrink-0" style="width: 300px;">
+                    <img alt="Screenshot of Landing Page Jurusan project" class="mb-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/AIyz8UQMHR6hF5HbeSjt047EO30dMpwi6nadCo0wqIIjI58JA.jpg" width="300">
+                    <h3 class="text-xl font-bold mb-2">Landing Page Jurusan</h3>
+                    <p class="text-gray-400">Status: Selesai</p>
+                </div>
+                <div class="border border-gray-700 p-4 rounded-lg shadow-lg bg-gray-700 flex-shrink-0" style="width: 300px;">
+                    <img alt="Screenshot of Game 2D Platformer with Unity project" class="mb-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/TlTIBw11tBYaMVVdplDmrQR9NxeJJMrudtcU0lmffZ3LikznA.jpg" width="300">
+                    <h3 class="text-xl font-bold mb-2">Game 2D Platformer with Unity</h3>
+                    <p class="text-gray-400">Status: Sedang di kerjakan</p>
+                </div>
+                <div class="border border-gray-700 p-4 rounded-lg shadow-lg bg-gray-700 flex-shrink-0" style="width: 300px;">
+                    <img alt="Screenshot of Game 3D FPS with Unity project" class="mb-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/Q2G4XCWj0BobOJ5WcuFiXSwmHZojt3W6VhGLr6DqeEjkI58JA.jpg" width="300">
+                    <h3 class="text-xl font-bold mb-2">Game 3D FPS with Unity</h3>
+                    <p class="text-gray-400">Status: Sedang di kerjakan</p>
+                </div>
+                <div class="border border-gray-700 p-4 rounded-lg shadow-lg bg-gray-700 flex-shrink-0" style="width: 300px;">
+                    <img alt="Screenshot of Expense Tracker App with PHP project" class="mb-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/CqWnutHxoMaAP94ocxlI86box7q7sv0rcSFjmA2SfbakI58JA.jpg" width="300">
+                    <h3 class="text-xl font-bold mb-2">Expense Tracker App with PHP</h3>
+                    <p class="text-gray-400">Status: Selesai</p>
+                </div>
+                <div class="border border-gray-700 p-4 rounded-lg shadow-lg bg-gray-700 flex-shrink-0" style="width: 300px;">
+                    <img alt="Screenshot of Aplikasi kas mini dengan Flutter project" class="mb-4 rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/RVRW6bfnr1xvdqDImxbfpmFw4B1fUC2dpeaNIrz1p1ctEJnPB.jpg" width="300">
+                    <h3 class="text-xl font-bold mb-2">Aplikasi kas mini dengan Flutter</h3>
+                    <p class="text-gray-400">Status: Sedang di kerjakan</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact mb-10 border border-gray-700 p-8 rounded-lg shadow-lg bg-gray-800">
+            <h2 class="text-3xl font-bold mb-4 text-gray-300 text-center">Contact</h2>
+            <ul class="list-none flex flex-row justify-between space-x-4 text-2xl">
+                <li class="flex flex-col items-center text-lg border border-gray-700 p-8 rounded-lg shadow-lg bg-gray-700 mx-2">
+                    <i class="fas fa-phone-alt text-blue-500 mb-4 text-3xl"></i>
+                    <span>085722867713</span>
+                </li>
+                <li class="flex flex-col items-center text-lg border border-gray-700 p-8 rounded-lg shadow-lg bg-gray-700 mx-2">
+                    <i class="fas fa-envelope text-blue-500 mb-4 text-3xl"></i>
+                    <span><a href="mailto:alphaaldiansyah@gmail.com" class="text-blue-500 hover:underline">alphaaldiansyah@gmail.com</a></span>
+                </li>
+                <li class="flex flex-col items-center text-lg border border-gray-700 p-8 rounded-lg shadow-lg bg-gray-700 mx-2">
+                    <i class="fab fa-instagram text-blue-500 mb-4 text-3xl"></i>
+                    <span><a href="https://www.instagram.com/nobuharaakito" target="_blank" class="text-blue-500 hover:underline">@nobuharaakito</a></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>Portfolio of Muhammad Aldiansyah Putra &copy; 2023</p>
+    </footer>
+</body>
+</html>
